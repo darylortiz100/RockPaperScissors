@@ -15,16 +15,17 @@
         }
 
         function userPlay() {
-            var userChoice = prompt("Choose and type 'Rock', 'Paper', 'Scissors'.")
-            if (userChoice.toLowerCase = 'rock') {
+            var userChoice = prompt("Choose and type 'Rock', 'Paper' or 'Scissors'.")
+            userChoice = userChoice.toLowerCase()
+            if (userChoice == 'rock') {
                 console.log("You chose " + userChoice + ".")
-                return userChoice
+                return 'rock'
             }
-            else if (userChoice.toLowerCase = 'paper') {
+            else if (userChoice == 'paper') {
                 console.log("You chose " + userChoice + ".")
                 return 'paper'
             }
-            else if (userChoice.toLowerCase = 'scissors') {
+            else if (userChoice == 'scissors') {
                 console.log("You chose " + userChoice + ".")
                 return 'scissors'
             }
